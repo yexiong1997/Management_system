@@ -1,0 +1,21 @@
+server:
+  port: 9999
+spring:
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mysql:///xdb
+  redis:
+    port: 6379
+    host: localhost
+
+logging:
+  level:
+    com.yeyeee: debug
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
